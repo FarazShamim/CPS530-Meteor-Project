@@ -1,14 +1,40 @@
 <head>
-  <title>Meteor-Presentation</title>
+  <title>Meteor Framework Template</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+	<div class="container">
+		<header>
+			<h1>Monthly Resolution</h1>
 
-  {{> hello}}
+			<label class="hide-finished">
+				<input type="checkbox" checked={{hideFinished}}>
+				Hide finished Resolutions
+			</label>
+			{{#if currentUser}}
+				<form class="new-resolution">
+					<input type="text" name="title" placeholder="A new resolution">
+					<input type= "submit" value="Submit"> 
+				</form>
+			{{/if}}
+		</header>
+
+		<!-- List containing task elements-->
+		<ul>
+			{{#each resolutions}}
+				{{> resolution}}
+			{{/each}}
+		</ul>
+
+		<!-- Allows you to login with a user account  -->
+		{{> loginButtons}}
+	</div>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="resolution">
+ 	<li class = "{{#if checked}} checked {{/if}}">
+ 		<input type="checkbox" checked="{{checked}}" class="toggle-checked">
+ 		<span class="text">{{title}}</span> 
+ 		<button class="delete">Remove</button>
+ 	</li>
 </template>
