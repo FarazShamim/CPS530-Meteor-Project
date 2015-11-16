@@ -21,3 +21,6 @@ insecure                # Allow all DB writes from clients (for prototyping)
 cryptoquick:stylus-multi
 accounts-password
 accounts-ui
+fourseven:scss
+reywood:bootstrap3-sass
+twbs:bootstrap

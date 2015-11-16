@@ -1,0 +1,137 @@
+/* navbar Style*/
+.navbar-default{
+    background-color:#404040;
+    border-color: #404040;
+    font-family: arial,helvetica;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+} 
+
+.navbar-default .navbar-brand:hover {
+    color: #de4f4f;
+}
+
+.navbar-default .navbar-brand:focus {
+    background-color: #5E5E5E;
+    color: #fff;
+}
+
+.navbar-default .navbar-brand > a:hover{
+    color: #fff;
+} 
+
+/* link */
+.navbar-default .navbar-nav > li > a{
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: #de4f4f;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    color:#fff;
+    background-color: #5E5E5E;
+}
+
+.navbar-default .navbar-fixed-top {
+    background-color:#000;
+
+}
+
+.section {
+    position: relative;
+    text-align: left;
+}
+
+/* Style for our header texts
+        * --------------------------------------- */
+h1{
+    font-size: 2.5em;
+    font-family: arial,helvetica;
+    margin-left: 1%;
+    color: #de4f4f;
+}
+
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    text-align:left;
+}
+/* Fixed header and footer.
+* --------------------------------------- */
+#header{
+    position:fixed;
+    height: 40px;
+    display:block;
+    width: 100%;
+    background: #333;
+    z-index:9;
+    text-align:center;
+    color: #f2f2f2;
+    padding: 20px 0 0 0;
+    top:0px;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+    color: #F00;
+}
+
+.fp-tooltip{
+    color: #5E5E5E;
+}
+
+#fp-nav span, .fp-slidesNav span{
+    border-color: #de4f4f;
+}
+#fp-nav li .active span, .fp-slidesNav .active span{
+     background: #de4f4f;
+}
+
+.fp-slidesNav ul li .fp-tooltip {
+    color: #5E5E5E;
+}
+
+.fp-tooltip.left{
+    color:  #5E5E5E;
+}
+
+div.slide-view {
+    margin-top: 60px;
+    max-width: 80%;
+    margin-left: 10%;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+
+}
+
+div.slide-content {
+    font-size: 1.250em;
+    color: black;
+    font-family: helvetica;
+    text-align: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width:100%;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #5E5E5E;
+    margin: .5em 0;
+    padding: 0;
+}
